@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE ESCAPE: Uni on Fire She's Fighting for Her Exit</title>
+    <style>
+        /* CSS styles for the menu bar */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #222; /* Dark background color */
+            color: #fff; /* Text color */
+        }
+
+        .menu-bar {
+            position: fixed; /* Make the menu bar fixed */
+            top: 0; /* Position it at the top of the viewport */
+            left: 0; /* Position it at the left edge of the viewport */
+            width: 100%; /* Make it full-width */
+            background-color: #4a4746; /* Fiery orange background color for the menu bar */
+            overflow: hidden;
+            z-index: 1000; /* Ensure it's above other content */
+        }
+
+        .menu-bar a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .menu-bar a:hover {
+            background-color: #302c2c; /* Hover color for menu items */
+        }
+
+        /* CSS styles for the header on the fiery background image */
+        .header {
+            position: absolute;
+            top: 85%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+        }
+
+        .header h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        /* CSS styles for the fiery background image */
+        .bg-image {
+            background-image: url('img/IMG_3420.jpg'); 
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+
+        /* CSS styles for the scroll button */
+        .scroll-button {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #4a4746; /* Fiery orange color for the button */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* CSS styles for the ABOUT section */
+        .about-section {
+            background-color: #333; /* Dark background color for the ABOUT section */
+            padding: 50px;
+            text-align: center;
+        }
+
+        /* CSS styles for the text box in the ABOUT section */
+        .text-box {
+            background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background for text box */
+            padding: 20px;
+            margin: 20px;
+            display: inline-block;
+            text-align: left;
+            width: 45%; /* Adjust the width as needed */
+            vertical-align: top;
+
+        }
+
+        /* Additional CSS styles for text inside the text box */
+        .text-box h2 {
+            color: #fff; /* Text color for the title */
+            font-size: 24px; /* Font size for the title */
+            margin-bottom: 10px; /* Spacing below the title */
+        }
+
+        .text-box p {
+            color: #fff;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* CSS styles for the photo carousel container */
+        .carousel-container {
+            background-color: #333; /* Dark background color for the carousel section */
+            padding: 20px;
+            text-align: center;
+            display: none; /* Hide the carousel initially */
+        }
+
+        /* CSS styles for the video container */
+        .video-container {
+            text-align: center; /* Center the content horizontally */
+            margin-top: 20px;
+        }
+
+        /* CSS styles for the video */
+        video {
+            max-width: 100%;
+        }
+
+
+         /* CSS styles for the "Learn more" button */
+         .learn-more-button {
+            text-align: center; /* Center the button horizontally */
+            margin-top: 20px;
+        }
+
+        /* CSS styles for the button itself */
+        .learn-more-button button {
+            background-color: #6b6b6b; /* Fiery orange color for the button */
+            color: #000000;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+    <div class="menu-bar">
+        <a href="#">HOME</a>
+        <a href="#about">ABOUT</a>
+    </div>
+    
+    <!-- Fiery background image with header -->
+    <div class="bg-image">
+        <div class="header">
+            <h1>THE ESCAPE</h1>
+            <p>Uni on Fire: She's Fighting for Her Exit</p> 
+        </div>
+        
+        <!-- Scroll button -->
+        <button class="scroll-button" onclick="scrollToVideo()">Scroll Down</button>
+    </div>
+
+    <!-- Video section (hidden by default) -->
+    <div class="video-container" id="video-section">
+        <video controls>
+            <source src="img/IMG_3009(1).mp4" type="video/mp4"> 
+            
+        </video>
+    </div>
+    
+
+    <!-- "Learn more" button to scroll to the ABOUT section -->
+    <div class="learn-more-button">
+        <a href="#about"><button>Learn more about the work</button></a>
+    </div>
+
+    <!-- ABOUT section -->
+    <div class="about-section" id="about">
+        <!-- Text box for ABOUT section -->
+        <div class="text-box">
+            <h2>About the project</h2> 
+            <p>"The Escape" is a short film that follows the gripping journey of a university student faced with an unexpected situation – a fire alarm disrupting her seemingly ordinary day on campus. This project delves into the heart-pounding chaos and tension that happens as she endeavors to make her way to safety, navigating through a maze of corridors, stairwells, and exits.
+                The overall concept of "The Escape" revolves around the theme of resilience, quick thinking, and the determination to overcome adversity in a high-stress situation. It highlights the innate human instinct to survive and adapt, even in the most unexpected and challenging circumstances. The central character, the uni girl, becomes a symbol of the everyday hero, and her story serves as a metaphor for the trials and tribulations faced by students as they strive to complete their education while tackling unexpected obstacles.
+                The project aims to create an immersive and suspenseful experience for the audience. Viewers are transported into the chaotic world of the university campus during a fire alarm.
+                Overall, "The Escape" is a thrilling and thought-provoking project that combines storytelling, suspense, and interactivity to create an immersive experience that resonates with audiences. It explores themes of resilience and survival while celebrating the unbeatable spirit of individuals facing unexpected challenges in their pursuit of education and personal growth.</p>
+        </div>
+        
+       
+
+    <script>
+
+        // JavaScript function to scroll to the video section and show the video
+        function scrollToVideo() {
+            var videoSection = document.getElementById('video-section');
+            videoSection.scrollIntoView({ behavior: 'smooth' });
+        }
+
+            // Show the video section
+            var videoSection = document.getElementById('video-section');
+            videoSection.style.display = 'block';
+        
+        
+    </script>
+</body>
+</html>
